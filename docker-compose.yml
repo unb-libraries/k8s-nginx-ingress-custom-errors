@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  custom-nginx-ingress-errors:
+    build:
+      context: .
+    container_name: custom-nginx-ingress-errors
+    expose:
+     - "80"
+    ports:
+      - "8889:8080"
