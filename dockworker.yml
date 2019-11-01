@@ -1,0 +1,19 @@
+dockworker:
+  version: '3.0'
+  application:
+    name: k8s-nginx-ingress-custom-errors
+    finish_marker: 'Attaching to'
+    project_prefix: K8SCUSTOM
+    upstream_images:
+      - zhiminwen/custom-error-page:latest
+  deployment:
+    environments:
+  github:
+    repo: pos.lib.unb.ca
+    owner: unb-libraries
+  image:
+    push_branches:
+      - latest
+    name: unblibraries/k8s-nginx-ingress-custom-errors
+    date_tag_image: true
+    repository: dockercloud

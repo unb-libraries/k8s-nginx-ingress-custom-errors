@@ -1,0 +1,20 @@
+{
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "name": "unb-libraries/k8s-nginx-ingress-custom-errors",
+  "description": "Scaffold and provision development for k8s-nginx-ingress-custom-errors",
+  "config": {
+    "preferred-install": {
+      "*": "dist"
+    }
+  },
+  "require-dev": {
+    "unb-libraries/dockworker": "3.x-dev"
+  },
+  "scripts": {
+    "post-update-cmd": [
+      "vendor/bin/dockworker dockworker:git:setup-hooks"
+    ]
+  }
+}

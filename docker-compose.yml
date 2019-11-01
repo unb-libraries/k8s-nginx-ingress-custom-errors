@@ -1,10 +1,10 @@
-version: '2'
+version: '3.6'
 
 services:
-  custom-nginx-ingress-errors:
+  k8s-nginx-ingress-custom-errors:
     build:
       context: .
-    container_name: custom-nginx-ingress-errors
+    container_name: k8s-nginx-ingress-custom-errors
     expose:
      - "80"
     ports:
