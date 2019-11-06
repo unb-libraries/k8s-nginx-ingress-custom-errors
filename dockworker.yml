@@ -8,6 +8,7 @@ dockworker:
       - zhiminwen/custom-error-page:latest
   deployment:
     environments:
+      - latest
   github:
     repo: pos.lib.unb.ca
     owner: unb-libraries
