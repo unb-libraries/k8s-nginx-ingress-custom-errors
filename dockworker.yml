@@ -10,7 +10,7 @@ dockworker:
     environments:
       - latest
   github:
-    repo: pos.lib.unb.ca
+    repo: k8s-nginx-ingress-custom-errors
     owner: unb-libraries
   image:
     push_branches:
